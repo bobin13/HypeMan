@@ -28,3 +28,4 @@ C:\Users\bahwi\OneDrive\Documents\VS Code Projects\HypeMan\bin\Debug\net8.0\Mong
 C:\Users\bahwi\OneDrive\Documents\VS Code Projects\HypeMan\bin\Debug\net8.0\SharpCompress.dll
 C:\Users\bahwi\OneDrive\Documents\VS Code Projects\HypeMan\bin\Debug\net8.0\Snappier.dll
 C:\Users\bahwi\OneDrive\Documents\VS Code Projects\HypeMan\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\bahwi\OneDrive\Documents\VS Code Projects\HypeMan\obj\Debug\net8.0\HypeMan.sourcelink.json

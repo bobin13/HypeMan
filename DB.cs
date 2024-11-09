@@ -1,4 +1,5 @@
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 
 namespace HypeMan
 {
@@ -15,10 +16,16 @@ namespace HypeMan
             return db.GetCollection<T>(collectionName);
 
         }
-        public List<Quote> GetAllQuotes()
+        public Quote GetQuote()
         {
-            var quotes = GetCollection<Quote>("quotes").AsQueryable().ToList();
-            return quotes;
+            Quote quote = GetCollection<Quote>("quotes").Aggregate().Sample(1).FirstOrDefault();
+            return quote;
+        }
+
+        public List<Contact> GetAllContacts()
+        {
+            var contacts = GetCollection<Contact>("contacts").AsQueryable().ToList();
+            return contacts;
         }
 
 
