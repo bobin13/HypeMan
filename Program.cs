@@ -19,7 +19,7 @@ class Program
         DB db = new();
         List<Contact> contacts = db.GetAllContacts();
         Quote quote = db.GetQuote();
-       
+
         if (quote != null && contacts.Count > 0)
         {
             SendMessage(contacts, quote);
