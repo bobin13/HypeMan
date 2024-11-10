@@ -11,15 +11,9 @@ class Program
     static void Main(string[] args)
     {
 
-        // twilio creds
-
-
-
-        //getting quotes from mongodb
         DB db = new();
         List<Contact> contacts = db.GetAllContacts();
         Quote quote = db.GetQuote();
-        //var qt = db.GetAllQuotes().AsQueryable().Sample(20);
 
 
         if (quote != null && contacts.Count > 0)
@@ -39,7 +33,7 @@ class Program
         foreach (Contact contact in contacts)
         {
             //Creatring the message string
-            var messageText = $"{contact.name}, your quote of the day:\n{quote.detail}\n-{quote.author}";
+            var messageText = $"\n{contact.name}, your quote of the day:\n{quote.detail}\n-{quote.author}";
 
             var message = MessageResource.Create(
             body: messageText,
