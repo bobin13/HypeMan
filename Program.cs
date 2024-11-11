@@ -1,5 +1,4 @@
-﻿using System;
-using HypeMan;
+﻿using HypeMan;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 using Twilio.Types;
