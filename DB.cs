@@ -12,16 +12,19 @@ namespace HypeMan
         {
             var username = Environment.GetEnvironmentVariable("MONGO_USERNAME");
             var password = Environment.GetEnvironmentVariable("MONGO_PASSWORD");
-            MongoClient client = new MongoClient($"mongodb+srv://{username}:{password}@cluster0.wi0uk9y.mongodb.net/?retryWrites=true&w=majority");
-
-            var db = client.GetDatabase(dbName);
+            
+	    MongoClient client = new MongoClient($"mongodb+srv://bobin13:b4LMPsGTb7tq1PsU@cluster0.wi0uk9y.mongodb.net/?retryWrites=true&w=majority");
+	    
+           var db = client.GetDatabase(dbName);
             return db.GetCollection<T>(collectionName);
 
         }
         public Quote GetQuote()
         {
-            Quote quote = GetCollection<Quote>("quotes").Aggregate().Sample(1).FirstOrDefault();
-            return quote;
+           Quote quote = GetCollection<Quote>("quotes").Aggregate().Sample(1).FirstOrDefault();
+	   //var filter = Builders<Quote>.Filter.Eq("author", "Vinland Saga");
+           //Quote quote = GetCollection<Quote>("quotes").Find(filter).FirstOrDefault();
+	   return quote;
         }
 
         public List<Contact> GetAllContacts()

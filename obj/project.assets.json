@@ -2414,19 +2414,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bahwi\\.nuget\\packages\\": {}
+    "/home/main/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bahwi\\OneDrive\\Documents\\VS Code Projects\\HypeMan\\HypeMan.csproj",
+      "projectUniqueName": "/home/main/projects/HypeMan/HypeMan.csproj",
       "projectName": "HypeMan",
-      "projectPath": "C:\\Users\\bahwi\\OneDrive\\Documents\\VS Code Projects\\HypeMan\\HypeMan.csproj",
-      "packagesPath": "C:\\Users\\bahwi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bahwi\\OneDrive\\Documents\\VS Code Projects\\HypeMan\\obj\\",
+      "projectPath": "/home/main/projects/HypeMan/HypeMan.csproj",
+      "packagesPath": "/home/main/.nuget/packages/",
+      "outputPath": "/home/main/projects/HypeMan/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bahwi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/main/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2444,11 +2444,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2480,7 +2475,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
