@@ -12,7 +12,7 @@ class Program
 
         //Loading variabbles from .env file
         var root = Directory.GetCurrentDirectory();
-        var dotenv = Path.Combine(root, "../../../.env");
+        var dotenv = Path.Combine(root, ".env");
         DotEnv.Load(dotenv);
 
         // List<Contact> temp =
@@ -27,6 +27,7 @@ class Program
         List<Contact> contacts = db.GetAllContacts();
         Quote quote = db.GetQuote();
         Console.WriteLine(quote.detail);
+
         //check to change property is_used to false for every quote,
         // if no quote is returned with property is_used as false.
         if (quote == null)
@@ -46,8 +47,8 @@ class Program
 
     public static void SendMessage(List<Contact> contacts, Quote quote)
     {
-        var accountSid = "AC5eceb5eaaa2847554ab7c6ed2984dce3";
-        var authToken = "c151777ef7a128cdd77718e1b9811384";
+        var accountSid = Environment.GetEnvironmentVariable("ACCOUNT_SID");
+        var authToken = Environment.GetEnvironmentVariable("AUTH_TOKEN");
         // Initialize Twilio client
         TwilioClient.Init(accountSid, authToken);
 

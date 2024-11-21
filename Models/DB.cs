@@ -13,8 +13,8 @@ namespace HypeMan
             var username = Environment.GetEnvironmentVariable("MONGO_USERNAME");
             var password = Environment.GetEnvironmentVariable("MONGO_PASSWORD");
 
-            MongoClient client = new MongoClient($"mongodb+srv://bobin13:b4LMPsGTb7tq1PsU@cluster0.wi0uk9y.mongodb.net/?retryWrites=true&w=majority");
-
+            Console.WriteLine(username + "/" + password);
+            MongoClient client = new MongoClient($"mongodb+srv://{username}:{password}@cluster0.wi0uk9y.mongodb.net/?retryWrites=true&w=majority");
             var db = client.GetDatabase(dbName);
             return db.GetCollection<T>(collectionName);
 
