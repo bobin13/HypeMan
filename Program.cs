@@ -15,14 +15,14 @@ class Program
         var dotenv = Path.Combine(root, ".env");
         DotEnv.Load(dotenv);
 
-        List<Contact> temp =
-        [
-            new Contact{
-                _id = ObjectId.GenerateNewId(),
-                name = "Bobin",
-                phoneNumber = "+16479360747"
-            },
-        ];
+        // List<Contact> temp =
+        // [
+        //     new Contact{
+        //         _id = ObjectId.GenerateNewId(),
+        //         name = "Bobin",
+        //         phoneNumber = "+16479360747"
+        //     },
+        // ];
         DB db = new();
         List<Contact> contacts = db.GetAllContacts();
         Quote quote = db.GetQuote();
@@ -38,7 +38,7 @@ class Program
 
         if (quote != null && contacts.Count > 0)
         {
-            SendMessage(temp, quote);
+            SendMessage(contacts, quote);
 
         }
         //setting quote is_used to true
