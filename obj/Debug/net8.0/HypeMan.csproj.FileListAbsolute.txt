@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\bahwi\OneDrive\Documents\VS Code Projects\HypeMan\bin\Debug\net8.0\HypeMan.exe
 C:\Users\bahwi\OneDrive\Documents\VS Code Projects\HypeMan\bin\Debug\net8.0\HypeMan.deps.json
 C:\Users\bahwi\OneDrive\Documents\VS Code Projects\HypeMan\bin\Debug\net8.0\HypeMan.runtimeconfig.json
@@ -29,3 +30,67 @@ C:\Users\bahwi\OneDrive\Documents\VS Code Projects\HypeMan\obj\Debug\net8.0\refi
 C:\Users\bahwi\OneDrive\Documents\VS Code Projects\HypeMan\obj\Debug\net8.0\HypeMan.pdb
 C:\Users\bahwi\OneDrive\Documents\VS Code Projects\HypeMan\obj\Debug\net8.0\HypeMan.genruntimeconfig.cache
 C:\Users\bahwi\OneDrive\Documents\VS Code Projects\HypeMan\obj\Debug\net8.0\ref\HypeMan.dll
+=======
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/HypeMan.exe
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/HypeMan.deps.json
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/HypeMan.runtimeconfig.json
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/HypeMan.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/HypeMan.pdb
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/obj/Debug/net8.0/HypeMan.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/obj/Debug/net8.0/HypeMan.AssemblyInfoInputs.cache
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/obj/Debug/net8.0/HypeMan.AssemblyInfo.cs
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/obj/Debug/net8.0/HypeMan.csproj.CoreCompileInputs.cache
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/obj/Debug/net8.0/HypeMan.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/obj/Debug/net8.0/refint/HypeMan.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/obj/Debug/net8.0/HypeMan.pdb
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/obj/Debug/net8.0/HypeMan.genruntimeconfig.cache
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/obj/Debug/net8.0/ref/HypeMan.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/Newtonsoft.Json.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/Twilio.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/obj/Debug/net8.0/HypeMan.csproj.AssemblyReference.cache
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/obj/Debug/net8.0/HypeMan.csproj.Up2Date
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/DnsClient.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/MongoDB.Bson.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/MongoDB.Driver.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/SharpCompress.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/Snappier.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/bin/Debug/net8.0/ZstdSharp.dll
+C:/Users/bahwi/OneDrive/Documents/VS Code Projects/HypeMan/obj/Debug/net8.0/HypeMan.sourcelink.json
+/home/main/projects/HypeMan/bin/Debug/net8.0/HypeMan
+/home/main/projects/HypeMan/bin/Debug/net8.0/HypeMan.deps.json
+/home/main/projects/HypeMan/bin/Debug/net8.0/HypeMan.runtimeconfig.json
+/home/main/projects/HypeMan/bin/Debug/net8.0/HypeMan.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/HypeMan.pdb
+/home/main/projects/HypeMan/bin/Debug/net8.0/DnsClient.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/MongoDB.Bson.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/MongoDB.Driver.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/SharpCompress.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/Snappier.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/Twilio.dll
+/home/main/projects/HypeMan/bin/Debug/net8.0/ZstdSharp.dll
+/home/main/projects/HypeMan/obj/Debug/net8.0/HypeMan.csproj.AssemblyReference.cache
+/home/main/projects/HypeMan/obj/Debug/net8.0/HypeMan.GeneratedMSBuildEditorConfig.editorconfig
+/home/main/projects/HypeMan/obj/Debug/net8.0/HypeMan.AssemblyInfoInputs.cache
+/home/main/projects/HypeMan/obj/Debug/net8.0/HypeMan.AssemblyInfo.cs
+/home/main/projects/HypeMan/obj/Debug/net8.0/HypeMan.csproj.CoreCompileInputs.cache
+/home/main/projects/HypeMan/obj/Debug/net8.0/HypeMan.sourcelink.json
+/home/main/projects/HypeMan/obj/Debug/net8.0/HypeMan.dll
+/home/main/projects/HypeMan/obj/Debug/net8.0/refint/HypeMan.dll
+/home/main/projects/HypeMan/obj/Debug/net8.0/HypeMan.pdb
+/home/main/projects/HypeMan/obj/Debug/net8.0/HypeMan.genruntimeconfig.cache
+/home/main/projects/HypeMan/obj/Debug/net8.0/ref/HypeMan.dll
+/home/main/projects/HypeMan/obj/Debug/net8.0/HypeMan.csproj.CopyComplete
+>>>>>>> e48bcd96834efd2a4b074a9f00531877e309fc8b

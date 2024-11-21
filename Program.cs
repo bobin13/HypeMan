@@ -13,7 +13,7 @@ class Program
         var root = Directory.GetCurrentDirectory();
         var dotenv = Path.Combine(root, "../../../.env");
         DotEnv.Load(dotenv);
-
+	Console.WriteLine(root);
 
         DB db = new();
         List<Contact> contacts = db.GetAllContacts();
@@ -28,16 +28,21 @@ class Program
 
     public static void SendMessage(List<Contact> contacts, Quote quote)
     {
-        var accountSid = Environment.GetEnvironmentVariable("ACCOUNT_SID");
-        var authToken = Environment.GetEnvironmentVariable("AUTH_TOKEN");
+        var accountSid = "AC5eceb5eaaa2847554ab7c6ed2984dce3";
+        var authToken = "c151777ef7a128cdd77718e1b9811384";
         // Initialize Twilio client
         TwilioClient.Init(accountSid, authToken);
 
         foreach (Contact contact in contacts)
         {
             //Creatring the message string
+<<<<<<< HEAD
             //var messageText = $"\n{contact.name}, your quote of the day:\n{quote.detail}\n-{quote.author}";
             var messageText = "\n[Correction]\n What are you so afraid of losing, when nothing in this world actually belongs to you.\n-Some Anime";
+=======
+            var messageText = $"\n{contact.name}, your quote of the day:\n{quote.detail}\n-{quote.author}";
+	
+>>>>>>> e48bcd96834efd2a4b074a9f00531877e309fc8b
             var message = MessageResource.Create(
             body: messageText,
             from: new PhoneNumber("+14434291713"), // Your Twilio number
