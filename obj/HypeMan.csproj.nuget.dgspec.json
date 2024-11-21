@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/main/projects/HypeMan/HypeMan.csproj": {}
+    "C:\\Users\\bahwi\\OneDrive\\Documents\\VS Code Projects\\HypeMan\\HypeMan.csproj": {}
   },
   "projects": {
-    "/home/main/projects/HypeMan/HypeMan.csproj": {
+    "C:\\Users\\bahwi\\OneDrive\\Documents\\VS Code Projects\\HypeMan\\HypeMan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/main/projects/HypeMan/HypeMan.csproj",
+        "projectUniqueName": "C:\\Users\\bahwi\\OneDrive\\Documents\\VS Code Projects\\HypeMan\\HypeMan.csproj",
         "projectName": "HypeMan",
-        "projectPath": "/home/main/projects/HypeMan/HypeMan.csproj",
-        "packagesPath": "/home/main/.nuget/packages/",
-        "outputPath": "/home/main/projects/HypeMan/obj/",
+        "projectPath": "C:\\Users\\bahwi\\OneDrive\\Documents\\VS Code Projects\\HypeMan\\HypeMan.csproj",
+        "packagesPath": "C:\\Users\\bahwi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bahwi\\OneDrive\\Documents\\VS Code Projects\\HypeMan\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/main/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\bahwi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -44,7 +49,7 @@
             },
             "Twilio": {
               "target": "Package",
-              "version": "[7.6.0, )"
+              "version": "[7.7.0, )"
             }
           },
           "imports": [
@@ -63,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

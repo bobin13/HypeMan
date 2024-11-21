@@ -9,7 +9,7 @@
       "HypeMan/1.0.0": {
         "dependencies": {
           "MongoDB.Driver": "3.0.0",
-          "Twilio": "7.6.0"
+          "Twilio": "7.7.0"
         },
         "runtime": {
           "HypeMan.dll": {}
@@ -296,7 +296,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "Twilio/7.6.0": {
+      "Twilio/7.7.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "6.34.0",
           "Newtonsoft.Json": "13.0.1",
@@ -305,8 +305,8 @@
         },
         "runtime": {
           "lib/net6.0/Twilio.dll": {
-            "assemblyVersion": "7.6.0.0",
-            "fileVersion": "7.6.0.0"
+            "assemblyVersion": "7.7.0.0",
+            "fileVersion": "7.7.0.0"
           }
         }
       },
@@ -606,12 +606,12 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "Twilio/7.6.0": {
+    "Twilio/7.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OmPcH5NBlKALxHfQgQs8hYNjIW0d54Qxi4rLtSs9aBmIWGvb/1QrPz9LTjJUy+NDtXi49StDbS+bdokJCExAhQ==",
-      "path": "twilio/7.6.0",
-      "hashPath": "twilio.7.6.0.nupkg.sha512"
+      "sha512": "sha512-xqFv4ojRFa28VDzsCFIK5KHUNPYOi+hC2rN5TmVxbVd+RhiqpyyOgMRgcHeBU8ZhBz9rh11yOQBL2TicAGZFjA==",
+      "path": "twilio/7.7.0",
+      "hashPath": "twilio.7.7.0.nupkg.sha512"
     },
     "ZstdSharp.Port/0.7.3": {
       "type": "package",

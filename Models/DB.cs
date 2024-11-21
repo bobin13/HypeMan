@@ -1,3 +1,4 @@
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace HypeMan
@@ -11,19 +12,35 @@ namespace HypeMan
         {
             var username = Environment.GetEnvironmentVariable("MONGO_USERNAME");
             var password = Environment.GetEnvironmentVariable("MONGO_PASSWORD");
-            
-	    MongoClient client = new MongoClient($"mongodb+srv://bobin13:b4LMPsGTb7tq1PsU@cluster0.wi0uk9y.mongodb.net/?retryWrites=true&w=majority");
-	    
-           var db = client.GetDatabase(dbName);
+
+            MongoClient client = new MongoClient($"mongodb+srv://bobin13:b4LMPsGTb7tq1PsU@cluster0.wi0uk9y.mongodb.net/?retryWrites=true&w=majority");
+
+            var db = client.GetDatabase(dbName);
             return db.GetCollection<T>(collectionName);
 
         }
         public Quote GetQuote()
         {
-           Quote quote = GetCollection<Quote>("quotes").Aggregate().Sample(1).FirstOrDefault();
-	   //var filter = Builders<Quote>.Filter.Eq("author", "Vinland Saga");
-           //Quote quote = GetCollection<Quote>("quotes").Find(filter).FirstOrDefault();
-	   return quote;
+            var filter = Builders<Quote>.Filter.Eq("is_used", false);
+            Quote quote = GetCollection<Quote>("quotes").Find(filter).FirstOrDefault();
+
+            return quote;
+        }
+
+        public void SetUsedToTrue(Quote quote)
+        {
+            var filter = Builders<Quote>.Filter.Eq("_id", quote._id);
+            var update = Builders<Quote>.Update.Set("is_used", true);
+
+            GetCollection<Quote>("quotes").UpdateOne(filter, update);
+
+        }
+
+        public void SetAllToFalse()
+        {
+            var filter = Builders<Quote>.Filter.Eq("is_used", true);
+            var update = Builders<Quote>.Update.Set("is_used", false);
+            GetCollection<Quote>("quotes").UpdateMany(filter, update);
         }
 
         public List<Contact> GetAllContacts()

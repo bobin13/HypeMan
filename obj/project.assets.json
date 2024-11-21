@@ -600,7 +600,7 @@
           }
         }
       },
-      "Twilio/7.6.0": {
+      "Twilio/7.7.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "6.34.0",
@@ -2368,10 +2368,10 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "Twilio/7.6.0": {
-      "sha512": "OmPcH5NBlKALxHfQgQs8hYNjIW0d54Qxi4rLtSs9aBmIWGvb/1QrPz9LTjJUy+NDtXi49StDbS+bdokJCExAhQ==",
+    "Twilio/7.7.0": {
+      "sha512": "xqFv4ojRFa28VDzsCFIK5KHUNPYOi+hC2rN5TmVxbVd+RhiqpyyOgMRgcHeBU8ZhBz9rh11yOQBL2TicAGZFjA==",
       "type": "package",
-      "path": "twilio/7.6.0",
+      "path": "twilio/7.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2384,7 +2384,7 @@
         "lib/net6.0/Twilio.xml",
         "lib/netstandard2.1/Twilio.dll",
         "lib/netstandard2.1/Twilio.xml",
-        "twilio.7.6.0.nupkg.sha512",
+        "twilio.7.7.0.nupkg.sha512",
         "twilio.nuspec"
       ]
     },
@@ -2410,23 +2410,23 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "MongoDB.Driver >= 3.0.0",
-      "Twilio >= 7.6.0"
+      "Twilio >= 7.7.0"
     ]
   },
   "packageFolders": {
-    "/home/main/.nuget/packages/": {}
+    "C:\\Users\\bahwi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/main/projects/HypeMan/HypeMan.csproj",
+      "projectUniqueName": "C:\\Users\\bahwi\\OneDrive\\Documents\\VS Code Projects\\HypeMan\\HypeMan.csproj",
       "projectName": "HypeMan",
-      "projectPath": "/home/main/projects/HypeMan/HypeMan.csproj",
-      "packagesPath": "/home/main/.nuget/packages/",
-      "outputPath": "/home/main/projects/HypeMan/obj/",
+      "projectPath": "C:\\Users\\bahwi\\OneDrive\\Documents\\VS Code Projects\\HypeMan\\HypeMan.csproj",
+      "packagesPath": "C:\\Users\\bahwi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bahwi\\OneDrive\\Documents\\VS Code Projects\\HypeMan\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/main/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\bahwi\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2444,6 +2444,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2456,7 +2461,7 @@
           },
           "Twilio": {
             "target": "Package",
-            "version": "[7.6.0, )"
+            "version": "[7.7.0, )"
           }
         },
         "imports": [
@@ -2475,7 +2480,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
