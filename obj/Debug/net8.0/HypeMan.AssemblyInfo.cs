@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HypeMan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65362cdd4e7eea44cbfef0c49dd0859a0a01fb61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b303b2637292522a960c48b9680c594b4beb012")]
 [assembly: System.Reflection.AssemblyProductAttribute("HypeMan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HypeMan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

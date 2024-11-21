@@ -36,8 +36,8 @@ class Program
         foreach (Contact contact in contacts)
         {
             //Creatring the message string
-            var messageText = $"\n{contact.name}, your quote of the day:\n{quote.detail}\n-{quote.author}";
-
+            //var messageText = $"\n{contact.name}, your quote of the day:\n{quote.detail}\n-{quote.author}";
+            var messageText = "\n[Correction]\n What are you so afraid of losing, when nothing in this world actually belongs to you.\n-Some Anime";
             var message = MessageResource.Create(
             body: messageText,
             from: new PhoneNumber("+14434291713"), // Your Twilio number
