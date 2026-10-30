@@ -13,13 +13,17 @@ namespace HypeMan
             var username = Environment.GetEnvironmentVariable("MONGO_USERNAME");
             var password = Environment.GetEnvironmentVariable("MONGO_PASSWORD");
 
+            if (string.IsNullOrWhiteSpace(username))
+                throw new InvalidOperationException("Missing required MongoDB environment variable: MONGO_USERNAME.");
+            if (string.IsNullOrWhiteSpace(password))
+                throw new InvalidOperationException("Missing required MongoDB environment variable: MONGO_PASSWORD.");
 
-            MongoClient client = new MongoClient($"mongodb+srv://{username}:{password}@cluster0.wi0uk9y.mongodb.net/?retryWrites=true&w=majority");
+            MongoClient client = new MongoClient($"mongodb+srv://{Uri.EscapeDataString(username)}:{Uri.EscapeDataString(password)}@cluster0.wi0uk9y.mongodb.net/?retryWrites=true&w=majority");
             var db = client.GetDatabase(dbName);
             return db.GetCollection<T>(collectionName);
 
         }
-        public Quote GetQuote()
+        public Quote? GetQuote()
         {
             var filter = Builders<Quote>.Filter.Eq("is_used", false);
             Quote quote = GetCollection<Quote>("quotes").Find(filter).FirstOrDefault();
@@ -43,10 +47,10 @@ namespace HypeMan
             GetCollection<Quote>("quotes").UpdateMany(filter, update);
         }
 
-        public List<Contact> GetAllContacts()
+        public List<Contact> GetActiveContacts()
         {
-            var contacts = GetCollection<Contact>("contacts").AsQueryable().ToList();
-            return contacts;
+            var filter = Builders<Contact>.Filter.Eq(contact => contact.active, true);
+            return GetCollection<Contact>("contacts").Find(filter).ToList();
         }
 
 

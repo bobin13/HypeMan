@@ -11,5 +11,6 @@ namespace HypeMan
         public ObjectId _id { get; set; }
         public string name { get; set; }
         public string phoneNumber { get; set; }
+        public bool active { get; set; }
     }
 }

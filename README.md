@@ -5,3 +5,31 @@ Enter Project HypeMan (okay, might change the name, but it sounds cool). Using T
 It's a free Twilio account so only have a $15 credit for messages once that runs out, no more texts.
 
 A little daily inspiration, coming right up! 🌟
+
+## Run with Docker and cron
+
+The container runs the app once and exits. Schedule it from the host with cron;
+the example below runs every day at 4:00 PM UTC.
+
+1. Make sure `.env` contains `MONGO_USERNAME`, `MONGO_PASSWORD`, `ACCOUNT_SID`,
+   and `AUTH_TOKEN`. Keep this file private; it is excluded from the Docker image.
+2. From the repository directory, build the image:
+
+   ```sh
+   docker build -t hypeman:latest .
+   ```
+
+3. Add a cron entry with `crontab -e`, replacing the paths with absolute paths
+   on the host. On Linux cron implementations that support `CRON_TZ`, use:
+
+   ```cron
+   CRON_TZ=UTC
+   0 16 * * * /usr/bin/docker run --rm --env-file /absolute/path/to/HypeMan/.env hypeman:latest >> /absolute/path/to/HypeMan/hypeman-cron.log 2>&1
+   ```
+
+   Find the Docker executable path with `command -v docker`. If your cron
+   implementation does not support `CRON_TZ`, configure the host's cron
+   timezone as UTC so the job runs at 4:00 PM UTC.
+
+The host must keep its Docker daemon running, and the cron user must be able to
+access it. Rebuild the image after changing the application.
